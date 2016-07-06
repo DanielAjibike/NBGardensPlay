@@ -27,6 +27,5 @@ class HomeController @Inject() extends Controller {
     implicit request =>
       Ok(views.html.hello(name))
   }
-
 }
 
