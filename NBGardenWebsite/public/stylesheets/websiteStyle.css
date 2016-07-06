@@ -34,12 +34,14 @@ body
 }
 
 #content{
+    position: relative;
 	height: 1700px;
 	width: 100%;
 	background-color: #edb494;
 	#background-image:url(gowest4.jpg);
 	background-size:cover;
 	text-align:center;
+	/*padding-left: 96px;*/
 }
 
 #footer {
@@ -49,14 +51,15 @@ body
 	background-color: #F0F0F0;
 	width: 100%;
 	text-align:center;
+	padding: 10px 0 10px 0px;
 }
 #footer img{
-	opacity:.2;
-	filter:alpha(opacity=60);
+	opacity:.4;
+	filter:alpha(opacity=40);
 }
 
 #footer img:hover{
-	opacity:.65;
+	opacity:.80;
 	filter:alpha(opacity=80)
 }
 
@@ -64,10 +67,12 @@ body
 	z-index: 999;
 	position: fixed;
 	float: left;
-	width: 187px;
+	width: 192px;
 	text-align: center;
 	background-color: #F0F0F0;
 	height: 100%;
+	font-family:"Helvetica";
+	font-size: 20px;
 }
 
 .textSetting {
@@ -77,30 +82,37 @@ body
 	top:200px;
 	padding-left: 200px;
 	padding-right:200px;
-   font-family:"Helvetica";
-   font-size: 30px;
-   color:#000000;
-   opacity:1;
+    font-family:"Helvetica";
+    font-size: 30px;
+    color:#000000;
+    opacity:1;
 }
-
 
 ul {
     list-style-type: none;
-    margin: 187px 0;
+    margin: 192px 0;
     padding: 0;
-    width: 187px;
+    width: 192px;
     background-color: #f1f1f1;
 }
 
 li a {
     display: block;
     color: #000;
-    padding: 8px 0 8px 16px;
+    padding: 8px 0 8px 0px;
     text-decoration: none;
 }
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #555;
+    background-color: #006633;
     color: white;
 }
+
+/*
+
+COLOR CODES
+light green - RGB 0 153 51 - #009933
+ dark green - RGB 0 102 51 - #006633
+
+*/
