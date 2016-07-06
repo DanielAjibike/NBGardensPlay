@@ -20,12 +20,13 @@ class HomeController @Inject() extends Controller {
     */
   def index = Action {
     //Redirect(routes.ProductController.list())
-    Ok(views.html.hello("world"))
+    Ok(views.html.home())
   }
 
   def hello(name: String) = Action {
     implicit request =>
-      Ok(views.html.hello(name))
+      Ok(views.html.home())
+
   }
 }
 
