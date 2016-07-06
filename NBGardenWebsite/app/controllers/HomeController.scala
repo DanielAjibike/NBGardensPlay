@@ -26,9 +26,7 @@ class HomeController @Inject() extends Controller {
   def hello(name: String) = Action {
     implicit request =>
       Ok(views.html.hello(name))
-
   }
-
 
 }
 
