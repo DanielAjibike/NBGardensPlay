@@ -64,7 +64,7 @@ body
 	z-index: 999;
 	position: fixed;
 	float: left;
-	width: 187px;
+	width: 192px;
 	text-align: center;
 	background-color: #F0F0F0;
 	height: 100%;
@@ -86,9 +86,9 @@ textSetting {
 
 ul {
     list-style-type: none;
-    margin: 187px 0;
+    margin: 192px 0;
     padding: 0;
-    width: 187px;
+    width: 192px;
     background-color: #f1f1f1;
 }
 
