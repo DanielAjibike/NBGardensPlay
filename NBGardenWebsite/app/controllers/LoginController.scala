@@ -17,11 +17,11 @@ class LoginController @Inject() extends Controller {
   // def findCustomer(cusId:String) = customers.find(_.username == cusId)//dont want this one
   //this is a comment
 
-  def findCustomer(cusId:String) =  C:Users.Administrator.IdeaProjects.NBGardensPlay2.NBGardensWebsite.app.models.datadump.getCustomers.find(_.username == cusId)
+// def findCustomer(cusId:String) =  C:Users.Administrator.IdeaProjects.NBGardensPlay2.NBGardensWebsite.app.models.datadump.getCustomers.find(_.username == cusId)
 
 
 
-  def login(username:String, password:String) {
+ /* def login(username:String, password:String) {
     val user = findCustomer(username).get
     print(user)
     if(user.password == password) {
@@ -31,7 +31,7 @@ class LoginController @Inject() extends Controller {
       print("The password you have entered is incorrect")
     }*/
   }
-
+*/
 
   def index = Action {
     Ok(views.html.home())
