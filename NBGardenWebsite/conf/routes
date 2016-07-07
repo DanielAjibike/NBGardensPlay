@@ -16,3 +16,8 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET     /registration               controllers.RegistrationController.registration
 
 
+GET     /findCustomer               controllers.LoginController.findCustomer(u:String)
+
+GET     /login                      controllers.LoginController.login(u:String, p:String)
+
+GET     /index                      controllers.LoginController.index
