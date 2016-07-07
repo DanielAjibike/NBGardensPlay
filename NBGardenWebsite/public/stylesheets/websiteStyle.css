@@ -23,13 +23,13 @@ body
 }
 
 #icon1 {
-	background-image:url(img/i2.png);
+	background-image:url(../images/i2.png);
 	height: 102px;
     width: 102px;
 	display: inline-block;
 }
 #icon1:hover{
-	background-image:url(img/i22.png);
+	background-image:url(../images/i22.png);
 	display: inline-block;
 }
 
@@ -75,7 +75,7 @@ body
 	font-size: 20px;
 }
 
-.textSetting {
+textSetting {
 	position:relative;
 	text-align: center;
 	vertical-align: middle;
