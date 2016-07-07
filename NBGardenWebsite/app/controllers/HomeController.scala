@@ -9,7 +9,7 @@ import play.api.mvc._
 import play.api.mvc.{Action, Controller,
 Flash}
 @Singleton
-class HomeController @Inject() extends
+class HomeController @Inject() extends//ll
   Controller {
   def index = Action {
     Ok(views.html.home())
