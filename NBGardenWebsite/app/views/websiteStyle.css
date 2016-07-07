@@ -40,7 +40,6 @@ body
 	#background-image:url(gowest4.jpg);
 	background-size:cover;
 	text-align:center;
-    padding-top: 70px;
 }
 
 #footer {
@@ -69,7 +68,6 @@ body
 	text-align: center;
 	background-color: #F0F0F0;
 	height: 100%;
-
 }
 
 textSetting {
@@ -105,10 +103,4 @@ li a {
 li a:hover {
     background-color: #555;
     color: white;
-}
-
-.container{
-    padding: 50px 0 0 400px;
-    width: 1200px;
-    margin: 0 0 0 187px;
 }
