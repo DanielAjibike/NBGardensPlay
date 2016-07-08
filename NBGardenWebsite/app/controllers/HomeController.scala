@@ -13,7 +13,11 @@ import play.api.i18n.Messages.Implicits._
 @Singleton
 class HomeController @Inject() extends Controller {
 
-  def home = Action {
+  def index = Action {
+    Ok(views.html.home())
+  }
+
+  def home() = Action {
     implicit request =>
       Ok(views.html.home())
   }
