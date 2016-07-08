@@ -1,8 +1,9 @@
+@(registrationForm: Form[CustomerDetails])
 @import play.api.Play.current
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @import play.api.mvc.Flash
-
+@import helper._
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +18,7 @@
 
 <div id="menu">
 
-    <a href= "Home.html"> <img src="@routes.Assets.versioned("images/NBGardens.png")" />
+    <a href= "home.html"> <img src="@routes.Assets.versioned("images/NBGardens.png")" />
 
     <div id="icons" style="float:right; margin-right:20px; font-size:0px;">
 
@@ -38,30 +39,26 @@
 </div>
 
 <div id="content">
-    <form action="\entity.CustomerDetails">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-        First name:<br>
-        <input type="text" name="firstname"> <br>
-        Last name:<br>
-        <input type="text" name="lastname"> <br>
-        Email:<br>
-        <input type="text" name="email"> <br>
-        Telephone:<br>
-        <input type="text" name="tele"> <br>
-        <b>Username:</b><br>
-        <input type="text" name="username"> <br>
-        Password:<br>
-        <input type="text" name="password"> <br>
-        Confirm Password:<br>
-        <input type="text" name="cpass"> <br>
-        <input type="submit" value="Register">
-    </form>
 
+    @main(Messages("registration.form")) {
+    <h2>@Messages("registration.form")</h2>
+    @helper.form(action = routes.RegistrationController.saveCustomer()) {
+    <fieldset>
+        <legend>
+            @Messages("customer.details", Messages("customer.new"))
+        </legend>
+        @helper.inputText(registrationForm("First Name"))
+        @helper.inputText(registrationForm("Last Name"))
+        @helper.inputText(registrationForm("Email"))
+        @helper.inputText(registrationForm("Telephone"))
+        @helper.inputText(registrationForm("Username"))
+        @helper.inputText(registrationForm("Password"))
+    </fieldset>
+    <p>
+        <input type="submit" class="btn-primary" value='@Messages("customer.new.submit")'>
+    </p>
+    }
+    }
 </div>
 
 <div id="footer">
